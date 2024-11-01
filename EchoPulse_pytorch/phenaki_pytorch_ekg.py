@@ -408,7 +408,7 @@ class Phenaki(nn.Module):
         self.cond_drop_prob = cond_drop_prob # classifier free guidance for transformers - @crowsonkb
 
         ###### EKG ENCODER ######
-        config_path='/STMEM/configs/downstream/st_mem.yaml'
+        config_path= "/content/ECHOPulse_Prelease/STMEM/configs/downstream/st_mem.yaml" # '/STMEM/configs/downstream/st_mem.yaml'
         
         with open(config_path, 'r') as f:
             config = yaml.safe_load(f)
